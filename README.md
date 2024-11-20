@@ -10,8 +10,8 @@ Our benchmark dataset is built upon the well-calibrated multi-modal UAV dataset 
 - Summary
 
 The summary of the full UAVScenes dataset is listed as follows, where a total of 23 sequences are included. Among them, 20 sequences are with camera-LiDAR semantic annotations and 6-DoF poses, while the rest 3 sequnces are with 2D dynamic object annotations only.
-<!-- ![Dataset Table](./pics/summary.png) -->
-<img src="./pics/summary.png" alt="summary" width="700">
+![Dataset Table](./pics/summary.png)
+<!-- <img src="./pics/summary.png" alt="summary" width="700"> -->
 
 - Download Link
 
