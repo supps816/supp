@@ -73,8 +73,19 @@ After downloading, you need to unzip the downloaded files, where all compressed 
             - ...
 ```
 
+
 ## Baseline Codes
+- We have provided the baseline codes for all 6 tasks, which is also uploaded at Google Drive anoynously (https://drive.google.com/drive/folders/1RpWHmXZKNCnbZDe5CcVASZiL7jp12JVE).
 
+- The detailed running instructions are in the respective readme files. 
+    1. [2D Semantic Segmentation Documentation](./README1_2DSemantic.md)
 
-For more details, refer to [2D Semantic Segmentation Documentation](./supp1_2DSemantic/README_2DSemantic.md).
+    2. [3D Semantic Segmentation Documentation](./README2_3DSemantic.md)
 
+    3. [Place Recognition Documentation](./README3_PlaceRecognition.md)
+
+    4. [Novel View Synthesis Documentation](./README4_NovelViewSynthesis.md)
+
+    5. [Scene Coordinate Regression Documentation](./README5_SceneCoordinateRegression.md)
+
+    6. [Depth Estimation Documentation](./README6_DepthEstimation.md)
