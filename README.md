@@ -9,14 +9,15 @@ Our benchmark dataset is built upon the well-calibrated multi-modal UAV dataset 
 
 - Summary
 
-The summary of the full UAVScenes dataset is listed as follows, where a total of 23 sequences are included. Among them, 20 sequences are with camera-LiDAR semantic/instance annotations and 6-DoF poses, while the rest 3 sequnces are with instance annotations only.
-![Dataset Table](./pics/summary.png)
+The summary of the full UAVScenes dataset is listed as follows, where a total of 23 sequences are included. Among them, 20 sequences are with camera-LiDAR semantic annotations and 6-DoF poses, while the rest 3 sequnces are with 2D dynamic object annotations only.
+<!-- ![Dataset Table](./pics/summary.png) -->
+<img src="./pics/summary.png" alt="DJI_M300" width="700">
 
 - Download Link
 
 Due to the large space of the full UAVScenes dataset, we provide a 5x downsampled version in the supplement. We include camera images, LiDAR point clouds, annotations, 6-DoF poses, reconstructed 3D maps (point cloud + mesh).
 The 5x-downsampled dataset can be downloaded at 
-Google Drive (https://drive.google.com/drive/folders/1B7SRVxgkIfuTapSiTWZd89aYTFB9pV5t).
+Google Drive (https://drive.google.com/drive/folders/1RpWHmXZKNCnbZDe5CcVASZiL7jp12JVE?usp=sharing).
 
 
 
@@ -73,9 +74,32 @@ After downloading, you need to unzip the downloaded files, where all compressed 
             - ...
 ```
 
+5. `UAVScenesv2_SemanticKITTI_format` include the SemanticKITTI-style UAVScenes dataset.
+```
+- UAVScenesv2_SemanticKITTI_format
+    - dataset 
+        - sequences
+            - skip300_AMtown01_interval5
+                - labels
+                    ...
+                - velodyne
+                    ...
+                - velodyne_mean
+                    ...
+``` 
+
+6. `interval1_dynamic_objects_Featureless_GNSS` include the dynamic object annotaions for the Featuresless_GNSS sequences.
+```
+- interval1_dynamic_objects_Featureless_GNSS
+    - skip300_Featureless_GNSS01_interval1
+        - images
+            ...
+        - instance_semantic_masks
+            ...
+```
 
 ## Baseline Codes
-- We have provided the baseline codes for all 6 tasks, which is also uploaded at Google Drive anoynously (https://drive.google.com/drive/folders/1RpWHmXZKNCnbZDe5CcVASZiL7jp12JVE).
+- We have provided the baseline codes for all 6 tasks, which are also uploaded at `supp_codes.zip` Google Drive (https://drive.google.com/drive/folders/1RpWHmXZKNCnbZDe5CcVASZiL7jp12JVE?usp=sharing).
 
 - The detailed running instructions are in the respective readme files. 
     1. [2D Semantic Segmentation Documentation](./README1_2DSemantic.md)
@@ -89,3 +113,14 @@ After downloading, you need to unzip the downloaded files, where all compressed 
     5. [Scene Coordinate Regression Documentation](./README5_SceneCoordinateRegression.md)
 
     6. [Depth Estimation Documentation](./README6_DepthEstimation.md)
+
+
+## Data Collection Platform
+
+The data collected platform used by the original Mars-LVIG dataset is the DJI M300 RTK, which is mainly loaded with
+- Hikvision CA-050-11UC (camera)
+- Livox Avia (LiDAR)
+- u-blox ZED-F9P (raw GNSS receiver)
+- DJI-L1 (close-source LiDAR)
+
+<img src="./pics/dji_m300.png" alt="DJI_M300" width="500">
