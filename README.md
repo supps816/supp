@@ -123,4 +123,5 @@ The data collected platform used by the original Mars-LVIG dataset is the DJI M3
 - u-blox ZED-F9P (raw GNSS receiver)
 - DJI-L1 (close-source LiDAR)
 
-<img src="./pics/dji_m300.png" alt="DJI_M300" width="500">
+![Dataset Table](./pics/dji_m300.png)
+<!-- <img src="./pics/dji_m300.png" alt="DJI_M300" width="500"> -->
