@@ -3,25 +3,22 @@
 # UAVScenes 
 We introduce UAVScenes, a large-scale dataset designed to benchmark various tasks across both 2D and 3D modalities.
 Our benchmark dataset is built upon the well-calibrated multi-modal UAV dataset MARS-LVIG, originally developed only for simultaneous localization and mapping (SLAM). We enhance this dataset by providing manually labeled semantic annotations for both images and LiDAR point clouds, along with accurate 6-degree-of-freedom (6-DoF) poses. These additions enable a wide range of UAV perception tasks, including detection, segmentation, depth estimation, 6-DoF localization, place recognition, and novel view synthesis (NVS). To the best of our knowledge, this is the first UAV benchmark dataset to offer both image and LiDAR point cloud semantic annotations (120k labeled pairs), with the potential to advance multi-modal UAV perception research significantly. 
-![Demo](https://anonymous.4open.science/r/uavscenes/pics/supp_demo.png)
-<img src="https://anonymous.4open.science/r/uavscenes/pics/supp_demo.png" alt="DJI_M300" width="500">
-<img src="pics/supp_demo.png" alt="DJI_M300" width="500">
-<img src="./pics/supp_demo.png" alt="DJI_M300" width="500">
+![pic](./pics/supp_demo.png)
+
 
 
 ## Dataset Overview
-
-- Summary
-
-The summary of the full UAVScenes dataset is listed as follows, where a total of 23 sequences are included. Among them, 20 sequences are with camera-LiDAR semantic annotations and 6-DoF poses, while the rest 3 sequnces are with 2D dynamic object annotations only.
-![Dataset Table](./pics/summary.png)
-
-
 - Download Link
 
 Since the dataset is still under review, to enable the reviewers to check the quality of the proposed dataset, and also to protect the interests of our work, we provide the 5x-downsampled dataset as the demo. We include camera images, LiDAR point clouds, annotations, 6-DoF poses, reconstructed 3D maps (point cloud + mesh).
 The 5x-downsampled dataset can be downloaded at 
 anoymous site [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/EseMuoSqW9lMj2lbH2OEl9MBbeuj5D-XUy6IJSxlps-aVQ?e=ZHazLK)
+
+
+- Summary
+
+The summary of the full UAVScenes dataset is listed as follows, where a total of 23 sequences are included. Among them, 20 sequences are with camera-LiDAR semantic annotations and 6-DoF poses, while the rest 3 sequnces are with 2D dynamic object annotations only.
+![pic](./pics/summary.png)
 
 
 
@@ -127,5 +124,4 @@ The data collected platform used by the original Mars-LVIG dataset is the DJI M3
 - u-blox ZED-F9P (raw GNSS receiver)
 - DJI-L1 (close-source LiDAR)
 
-![Dataset Table](./pics/dji_m300.png)
-<!-- <img src="./pics/dji_m300.png" alt="DJI_M300" width="500"> -->
+![pic](./pics/dji_m300.png)
