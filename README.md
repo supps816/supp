@@ -17,7 +17,7 @@ The summary of the full UAVScenes dataset is listed as follows, where a total of
 
 Due to the large space of the full UAVScenes dataset, we provide a 5x downsampled version in the supplement. We include camera images, LiDAR point clouds, annotations, 6-DoF poses, reconstructed 3D maps (point cloud + mesh).
 The 5x-downsampled dataset can be downloaded at 
-Google Drive (https://drive.google.com/drive/folders/1RpWHmXZKNCnbZDe5CcVASZiL7jp12JVE?usp=sharing).
+Drive (https://drive.google.com/drive/folders/1RpWHmXZKNCnbZDe5CcVASZiL7jp12JVE?usp=sharing).
 
 
 
@@ -99,7 +99,7 @@ After downloading, you need to unzip the downloaded files, where all compressed 
 ```
 
 ## Baseline Codes
-- We have provided the baseline codes for all 6 tasks, which are also uploaded at `supp_codes.zip` Google Drive (https://drive.google.com/drive/folders/1RpWHmXZKNCnbZDe5CcVASZiL7jp12JVE?usp=sharing).
+- We have provided the baseline codes for all 6 tasks, which are also uploaded at `supp_codes.zip` Drive (https://drive.google.com/drive/folders/1RpWHmXZKNCnbZDe5CcVASZiL7jp12JVE?usp=sharing).
 
 - The detailed running instructions are in the respective readme files. 
     1. [2D Semantic Segmentation Documentation](./README1_2DSemantic.md)
