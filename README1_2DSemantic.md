@@ -23,7 +23,7 @@ pyyaml
 ### Run
 - Dataset preparation. 
 
-You need to modify some arguments in `tools/options.py`. For example, you need to change the `imagedataroot` to where you store the dataset. The formatted demo dataset is uploaded at ???
+You need to modify some arguments in `tools/options.py`. For example, you need to change the `imagedataroot` to where you store the dataset. The formatted demo dataset is uploaded.
 
 - Below are some example running scripts for running ResNet, ViT (Vision Transformer), 
 ```
