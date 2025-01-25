@@ -12,7 +12,7 @@ Our benchmark dataset is built upon the well-calibrated multi-modal UAV dataset 
 
 Since the dataset is still under review, to enable the reviewers to check the quality of the proposed dataset, and also to protect the interests of our work, we provide the 5x-downsampled dataset as the demo. We include camera images, LiDAR point clouds, annotations, 6-DoF poses, reconstructed 3D maps (point cloud + mesh).
 The 5x-downsampled dataset can be downloaded at 
-anoymous site [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/EseMuoSqW9lMj2lbH2OEl9MBbeuj5D-XUy6IJSxlps-aVQ?e=ZHazLK)
+anoymous site [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/EseMuoSqW9lMj2lbH2OEl9MBbeuj5D-XUy6IJSxlps-aVQ)
 
 
 - Summary
