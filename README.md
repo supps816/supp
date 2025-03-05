@@ -15,10 +15,6 @@ The 5x-downsampled dataset can be downloaded at
 anoymous site [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/EseMuoSqW9lMj2lbH2OEl9MBbeuj5D-XUy6IJSxlps-aVQ)
 
 
-- Summary
-
-The summary of the full UAVScenes dataset is listed as follows, where a total of 23 sequences are included. Among them, 20 sequences are with camera-LiDAR semantic annotations and 6-DoF poses, while the rest 3 sequnces are with 2D dynamic object annotations only.
-![pic](./pics/summary.png)
 
 
 
@@ -116,12 +112,4 @@ After downloading, you need to unzip the downloaded files, where all compressed 
     6. [Depth Estimation Documentation](./README6_DepthEstimation.md)
 
 
-## Data Collection Platform
 
-The data collected platform used by the original Mars-LVIG dataset is the DJI M300 RTK, which is mainly loaded with
-- Hikvision CA-050-11UC (camera)
-- Livox Avia (LiDAR)
-- u-blox ZED-F9P (raw GNSS receiver)
-- DJI-L1 (close-source LiDAR)
-
-![pic](./pics/dji_m300.png)
