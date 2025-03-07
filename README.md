@@ -98,7 +98,7 @@ After downloading, you need to unzip the downloaded files, where all compressed 
 ## Baseline Codes
 - The codes for all 6 tasks are uploaded at `supp_codes.zip` [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/EseMuoSqW9lMj2lbH2OEl9MBbeuj5D-XUy6IJSxlps-aVQ)
 
-- The detailed running instructions are in the respective readme files. 
+- The detailed running instructions and split information are in the respective readme files. 
     1. [2D Semantic Segmentation Documentation](./README1_2DSemantic.md)
 
     2. [3D Semantic Segmentation Documentation](./README2_3DSemantic.md)
