@@ -10,9 +10,9 @@ Our benchmark dataset is built upon the well-calibrated multi-modal UAV dataset 
 ## Dataset Overview
 - Download Link
 
-Since the dataset is still under review, to enable the reviewers to check the quality of the proposed dataset, and also to protect the interests of our work, we provide the 5x-downsampled dataset as the demo. We include camera images, LiDAR point clouds, annotations, 6-DoF poses, reconstructed 3D maps (point cloud + mesh).
+Since the dataset is still under review, to enable the reviewers to check the quality of the proposed dataset, and also to protect the interests of our work, we provide the 5x-downsampled dataset here (except for non-downsampled Featureless_GNSS series). We include camera images, LiDAR point clouds, annotations, 6-DoF poses, reconstructed 3D maps (point cloud + mesh).
 The 5x-downsampled dataset can be downloaded at 
-anoymous site [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/EseMuoSqW9lMj2lbH2OEl9MBbeuj5D-XUy6IJSxlps-aVQ)
+anoymous OneDrive site [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/Emby2Ouvp1lOt-FDY74i13UBoWrrNRUxbTHv9AxEiv_4ow?e=ZqF16s). All benchmarking experiments are conducted on the 5x-downsampled version.
 
 
 
@@ -61,19 +61,20 @@ After downloading, you need to unzip the downloaded files, where all compressed 
         - sampleinfos_interpolated_filtered_interval5.json
 ```
 
-4. `terra_3dmap_pointcloud_mesh` include the reconstructed 3D maps in both point cloud and mesh formats.
+4. `terra_3dmap_pointcloud_mesh_segmented` include the reconstructed 3D maps in both point cloud and mesh formats. The segmented 3D maps are also included.
 ```
 - terra_3dmap_pointcloud_mesh
     - AMtown
         - cloud_merged.ply
         - Mesh.ply
         - terra_ply
+        - cloud_merged_segmented.txt
             - ...
 ```
 
-5. `UAVScenesv2_SemanticKITTI_format` include the SemanticKITTI-style UAVScenes dataset.
+5. `UAVScenes_ICCVv1` include the SemanticKITTI-style UAVScenes dataset.
 ```
-- UAVScenesv2_SemanticKITTI_format
+- UAVScenes_ICCVv1
     - dataset 
         - sequences
             - skip300_AMtown01_interval5
@@ -96,9 +97,9 @@ After downloading, you need to unzip the downloaded files, where all compressed 
 ```
 
 ## Baseline Codes
-- The codes for all 6 tasks are uploaded at `supp_codes.zip` [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/EseMuoSqW9lMj2lbH2OEl9MBbeuj5D-XUy6IJSxlps-aVQ)
+- The codes for all 6 tasks are uploaded at OneDrive `supp_codes_iccv.zip` [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/Emby2Ouvp1lOt-FDY74i13UBoWrrNRUxbTHv9AxEiv_4ow?e=ZqF16s)
 
-- The detailed running instructions and split information are in the respective readme files. 
+- The detailed running instructions, train/test split, and requirement information are in the respective readme files. 
     1. [2D Semantic Segmentation Documentation](./README1_2DSemantic.md)
 
     2. [3D Semantic Segmentation Documentation](./README2_3DSemantic.md)
