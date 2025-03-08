@@ -9,15 +9,30 @@ Our benchmark dataset is built upon the well-calibrated multi-modal UAV dataset 
 
 ## Dataset Overview
 - Download Link
+
 Since the dataset is still under review, to enable the reviewers to check the quality of the proposed dataset, and also to protect the interests of our work, we provide the 5x-downsampled dataset here (except for non-downsampled Featureless_GNSS series). We include camera images, LiDAR point clouds, annotations, 6-DoF poses, reconstructed 3D maps (point cloud + mesh).
 The 5x-downsampled dataset can be downloaded at 
-anoymous site [OneDrive](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/Emby2Ouvp1lOt-FDY74i13UBoWrrNRUxbTHv9AxEiv_4ow?e=bg507A). All benchmarking experiments are conducted on the 5x-downsampled version.
+anoymous OneDrive site [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/Emby2Ouvp1lOt-FDY74i13UBoWrrNRUxbTHv9AxEiv_4ow?e=ZqF16s). All benchmarking experiments are conducted on the 5x-downsampled version.
 
-- Directory Structure
+
+
+
+
+## Directory Structure
 
 After downloading, you need to unzip the downloaded files, where all compressed files are in `.zip` formats.
 
-1. `interval5_2Dsemantic_instance` include 2D semantic annotations in `uint8` RGB colors or class ids.
+- `interval1_dynamic_objects_Featureless_GNSS` include the dynamic object annotaions for the Featuresless_GNSS sequences.
+```
+- interval1_dynamic_objects_Featureless_GNSS
+    - skip300_Featureless_GNSS01_interval1
+        - images
+            ...
+        - instance_semantic_masks
+            ...
+```
+
+- `interval5_2Dsemantic_instance` include 2D semantic annotations in `uint8` RGB colors or class ids.
 ```
 - interval5_2Dsemantic_instance
     - skip300_AMtown01_interval5
@@ -27,7 +42,7 @@ After downloading, you need to unzip the downloaded files, where all compressed 
 ...
 ```
 
-2. `interval5_3Dsemantic` include 3D LiDAR point cloud annotations in `uint8` RGB colors or class ids. Note that `lidar` is the lidar timestamp, while `image` is the corresponding image timestamp. 
+- `interval5_3Dsemantic` include 3D LiDAR point cloud annotations in `uint8` RGB colors or class ids. Note that `lidar` is the lidar timestamp, while `image` is the corresponding image timestamp. 
 ```
 - interval5_3Dsemantic
     - skip300_AMtown01_interval5
@@ -36,7 +51,7 @@ After downloading, you need to unzip the downloaded files, where all compressed 
             - image1658137058.142927663_lidar1658137058.124909215.txt
 ```
 
-3. `interval5_nolabels` mainly include images, LiDAR point clouds, depth maps, 6-DoF poses, GNSS coordinates from RTK.
+- `interval5_nolabels` mainly include images, LiDAR point clouds, depth maps, 6-DoF poses, GNSS coordinates from RTK.
 ```
 - interval5_nolabels
     - skip300_AMtown01_interval5
@@ -56,7 +71,13 @@ After downloading, you need to unzip the downloaded files, where all compressed 
         - sampleinfos_interpolated_filtered_interval5.json
 ```
 
-4. `terra_3dmap_pointcloud_mesh_segmented` include the reconstructed 3D maps in both point cloud and mesh formats. The segmented 3D maps are also included.
+- `interval5_nolabels_imageonly` include pure images, 6-DoF poses, GNSS coordinates from RTK.
+
+- `interval5_with2Dsemantic_instance_resize512` contains resized images (512) for quick checkout.
+
+
+
+- `terra_3dmap_pointcloud_mesh_segmented` include the reconstructed 3D maps in both point cloud and mesh formats. The segmented 3D maps are also included.
 ```
 - terra_3dmap_pointcloud_mesh
     - AMtown
@@ -67,7 +88,7 @@ After downloading, you need to unzip the downloaded files, where all compressed 
             - ...
 ```
 
-5. `UAVScenes_ICCVv1` include the SemanticKITTI-style UAVScenes dataset.
+- `UAVScenes_ICCVv1` include the SemanticKITTI-style UAVScenes dataset.
 ```
 - UAVScenes_ICCVv1
     - dataset 
@@ -81,18 +102,10 @@ After downloading, you need to unzip the downloaded files, where all compressed 
                     ...
 ``` 
 
-6. `interval1_dynamic_objects_Featureless_GNSS` include the dynamic object annotaions for the Featuresless_GNSS sequences.
-```
-- interval1_dynamic_objects_Featureless_GNSS
-    - skip300_Featureless_GNSS01_interval1
-        - images
-            ...
-        - instance_semantic_masks
-            ...
-```
+
 
 ## Baseline Codes
-- The codes for all 6 tasks are uploaded at OneDrive `supp_codes_iccv.zip` [OneDrive](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/Emby2Ouvp1lOt-FDY74i13UBoWrrNRUxbTHv9AxEiv_4ow?e=bg507A)
+- The codes for all 6 tasks are uploaded at OneDrive `supp_codes_iccv.zip` [Download_Link](https://suppsupp321-my.sharepoint.com/:f:/g/personal/suppsupp321_suppsupp321_onmicrosoft_com/Emby2Ouvp1lOt-FDY74i13UBoWrrNRUxbTHv9AxEiv_4ow?e=ZqF16s)
 
 - The detailed running instructions, train/test split, and requirement information are in the respective readme files. 
     1. [2D Semantic Segmentation Documentation](./README1_2DSemantic.md)
