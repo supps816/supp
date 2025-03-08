@@ -6,7 +6,17 @@ Please perform data preprocessing first and replace the path with the correspond
 ```
 python prepare_uavscenes.py
 ```
+### Split
+For every 5 frames, 1 frame is selected for testing, while the remaining frames are used for training. 
+```
+Train&Test: AMtown01
 
+Train&Test: AMvalley01
+
+Train&Test: HKairport01
+
+Train&Test: HKisland01
+```
 
 ## 1. 3DGS
 ---- 

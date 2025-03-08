@@ -3,6 +3,18 @@
 
 Zero-shot depth estimation aims to predict depth maps for unseen scenes without requiring task-specific fine-tuning. It leverages transferable knowledge from pretrained models, enabling versatile, label-efficient solutions for applications.
 
+
+## Split
+The zero-shot test split is based on the sequence level. The data root folder is `interval5_nolabels/`.
+```python
+test_sequences = [
+    '/interval5_nolabels/skip300_AMtown01_interval5',
+    '/interval5_nolabels/skip300_AMvalley01_interval5',
+    '/interval5_nolabels/skip300_HKairport01_interval5',
+    '/interval5_nolabels/skip300_HKisland01_interval5',
+]
+```
+
 ## 1. DepthAnything
 
 The code is based on the official DepthAnything Code (https://github.com/LiheYoung/Depth-Anything). 

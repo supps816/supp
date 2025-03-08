@@ -2,6 +2,39 @@
 
 The place recognition basic framework is based on DVGLB (https://github.com/gmberton/deep-visual-geo-localization-benchmark). 
 
+## Splits
+The splits are based on sequence levels. The data root folder is `interval5_nolabels/`.
+```python
+
+# Training uses the first 50% frames in each sequence.
+trainq_selectlocationlist = [
+    'skip300_AMtown02_interval5', 
+    'skip300_AMvalley02_interval5', 
+]
+
+# Training uses the first 50% frames in each sequence.
+traindb_selectlocationlist = [
+    'skip300_AMtown02_interval5', 
+    'skip300_AMvalley02_interval5', 
+]
+
+
+# Test uses the last 50% frames in each sequence.
+testq_selectlocationlist = [ 
+    'skip300_HKairport_GNSS_Evening_interval5', 
+    'skip300_HKairport_GNSS01_interval5', 
+    'skip300_HKisland_GNSS_Evening_interval5',
+    'skip300_HKisland_GNSS01_interval5',
+    'skip300_Featureless_GNSS01_interval5',
+]
+
+# Test uses the last 50% frames in each sequence.
+testdb_selectlocationlist = [
+    'skip300_HKairport03_interval5',
+    'skip300_HKisland03_interval5',
+]
+```
+
 ## Requirements
 
 - torch
@@ -47,6 +80,7 @@ pip install timm==1.0.11
 pip install transformers==4.43.3
 pip install albumentations
 ```
+
 
 ## Running
 The training codes are in `train.py`, and you need to modify some arguments in `tools/options.py` to ensure right configutations. For example, you need to modify `--dataroot` to the path that you store the UAVScenes dataset.Below we list some demo scripts to conduct training and evaluation.
